@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework N3 - Meta tags, Video</title>
+  
+    <!--    http-equiv  -  FOR BROWSERS  -->
+
+    <!-- X-UA-Compatible is a document mode meta tag that allows web authors to choose what version of Internet Explorer the page should be rendered as. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <!-- Specifies a content policy for the document. -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+    <!-- Defines a time interval (100s) for the document to refresh itself. + we can add 2nd parameter as url and redirect from our website to another -->
+    <meta http-equiv="refresh" content="100">
+    <!-- Specified the preferred style sheet to use. -->
+    <meta http-equiv="default-style" content="the document's preferred stylesheet">
+
+    <!--    NAME - FOR SEARCH ENGINES     -->  
+
+    <!-- To see the website not from Masis  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- info about website -->
+    <meta name="description" content="Picsart Academy - Lesson 4 - Meta tags, Video tag">
+    <meta name="keywords" content="Picsart Academy, HTML Lessons">
+    <meta name="author" content="Picsart Academy">
+    <meta name="application-name" content="Picsart Academy - Lesson 4">
+    <meta name="generator" content="HTML"> 
+</head>
+<body>
+    <!-- Video Tag and attributes -->
+    <video width="50%" height="auto" controls loop muted duration playsinline preload 
+           poster="https://upload.wikimedia.org/wikipedia/commons/9/9e/Ours_brun_parcanimalierpyrenees_1.jpg">
+        <!-- There are 3 supported video formats in HTML: MP4, WebM and OGG. -->
+        <!-- The browser will choose the first source it supports. -->
+        <source src="./video/movie.mp4" type="video/mp4">
+        <source src="./video/flower.webm" type="video/webm">
+        <source src="./video/mov_bbb.ogg" type="video/ogg"> 
+    </video>
+    
+</body>
+</html>
