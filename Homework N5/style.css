@@ -1,0 +1,30 @@
+mark:hover{
+    color: firebrick;
+}
+/* Group Selectors */
+.html-explained-section p,
+.html-basics-section p{
+    color: rgba(7, 185, 168, .8);
+}
+
+/* Inheritance of CSS */
+fieldset{
+    color: rgb(170, 1, 248);
+}
+
+
+a{
+    color: blue;
+}
+a:link{
+    color: blue;
+}
+a:active{
+    color: #D82F0B;
+}
+a:visited{
+    color: #A009F1;
+}
+a:hover{
+    color: #F1B509;
+}
