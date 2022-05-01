@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans";
+}
+
+
+/* ------- Task 1 ------- */
+.container_1 {
+    width: 900px;
+    max-width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #FDBC60;
+    border: 1px solid #FDBC60;
+}
+
+.container_1 .child-box {
+    height: 150px;
+    position: relative;
+    margin-top: 170px;
+    padding: 0 65px;
+}
+
+.container_1 .child-box .child {
+    width: 250px;
+    height: 150px;
+    display: inline-block;
+    position: absolute;
+    background-color: #ED5FEE;
+    border: 5px solid #fff;
+    border-radius: 8px;
+}
+
+.container_1 .child-box .child p {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 140px;
+    color: #fff;
+    text-align: center;
+}
+
+.child_01 {
+    left: 65px;
+}
+
+.container_1 .child-box .child_02 {
+    border: 10px solid #85007F;
+    left: 30%;
+    bottom: 50px;
+}
+
+.child_03 {
+    right: 65px;
+}
+
+/* ------- Task 2 ------- */
+.container_2 {
+    width: 900px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: #FF4498;
+    border: 50px solid #B237FF;
+    position: relative;
+}
+
+.container_2 .test-box {
+    width: 500px;
+    height: 300px;
+    background-color: #F2FF34;
+    border: 1px dashed #333333;
+    position: absolute;
+    top: -50px;
+    left: 150px;
+}
+
+.container_2 .test-box p {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 300px;
+    text-align: center;
+}
+
+/* ------- Task 3 ------- */
+.container_3 {
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #FFC0CB;
+    border: 1px solid black;
+}
+
+.container_3 .container_3_p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container_3_p_parent {
+    margin-top: 80px;
+}
+
+.container_3 .container_3_child {
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    background-color: #008000;
+    border: 1px solid black;
+}
+
+.container_3_p_child {
+    margin-top: 50px;
+}
+
+.container_3 .container_3_child .container_3-element {
+    width: 700px;
+    height: 150px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    background: #FFFF00;
+    border: 1px solid black;
+}
+
+.container_3_p_element {
+    margin-top: 0;
+    line-height: 150px;
+}
+
+/* ------- Task 4 - Contact Us ------- */
+.contact_us {
+    width: 900px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: #f5f5f5;
+}
+
+.contact_us h2 {
+    font-size: 42px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #566787;
+    margin-bottom: 20px;
+}
+
+.contact_us p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #566787;
+    margin-bottom: 20px;
+}
+
+.contact_us .first-last-name-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_us .first-last-name-box .first-name-box  input {
+    width: 410px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+.contact_us .first-last-name-box .first-name-box  input:focus {
+    outline: none;
+    border: 1px solid #299BE4;
+}
+
+.contact_us form label {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #566787;
+}
+
+.contact_us form input {
+    width: 100%;
+    height: 40px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+.contact_us form textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    resize: vertical;
+    outline: none;
+}
+
+.contact_us form input:focus {
+    outline: none;
+    border: 1px solid #299BE4;
+}
+
+.contact_us form  textarea:focus {
+    outline: none;
+    border: 1px solid #299BE4;
+}
+
+.contact_us .btn-submit{
+    width: 170px !important;
+    background-color: #299BE4;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact_us .btn-submit:hover{
+    background-color: #fff;
+    color: #299BE4;
+    border: 1px solid #299BE4;
+}
