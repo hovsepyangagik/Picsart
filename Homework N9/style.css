@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+section {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.controls {
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+    background-color: red;
+    z-index: 2;
+}
+
+.block_2 {
+    background-color: green;
+    top:  50px;
+    left: 50px;
+}
+
+.block_3 {
+    background-color: blue;
+    top:  100px;
+    left: 100px;
+}
+
+.block_4 {
+    background-color: #FF00FF;
+    top:  150px;
+    left: 150px;
+}
+
+.block_5 {
+    background-color: #DC143C;
+    top:  200px;
+    left: 200px;
+}
+
+.block_6 {
+    background-color: #9932CC;
+    top: 250px;
+    left: 250px;
+}
+
+.block_7 {
+    background-color: #FF8C00;
+    top: 300px;
+    left: 300px;
+    z-index: 1;
+}
