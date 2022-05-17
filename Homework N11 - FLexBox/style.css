@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto Flex";
+}
+
+a { 
+    text-decoration: none;
+}
+
+.page-structure{
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    width: 300px;
+    padding: 25px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, #2E48CF, #2F47CC);
+}
+
+
+
+.header-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header Menu Part */
+
+.header-menu-part .website-logo { 
+    margin-bottom: 30px;
+}
+
+.header-menu-part nav ul {
+    list-style-type: none;
+}
+
+.header-menu-part nav ul li {
+    padding: 7px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-menu-part nav ul li input[type="search"]{
+    padding: 7px 7px 7px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+.header-menu-part nav ul li input[type="search"]::placeholder{
+    color: #fff;
+}
+
+.header-menu-part nav ul li:nth-child(1) {
+    background-color: #5365CB;
+    border-radius: 5px;
+}
+
+.header-menu-part nav ul li:hover {
+    background-color: #19297A;
+    border-radius: 5px;
+}
+
+.header-menu-part nav ul li img {
+    margin-right: 10px;
+}
+
+.header-menu-part nav ul li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+/* User Profile */
+
+.user-profile-box {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.user-profile-box .user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile-box .user-profile-picture {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile-box .user-profile-name {
+    font-size: 16px;
+    color: #fff;
+}
+
+.user-profile-box .user-profile-question {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #233AAB;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main{
+    width: calc(100% - 300px);
+    height: 100vh;
+    overflow-y: scroll;
+    margin: 0 auto;
+}
+
+.your-business {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.your-business .service {
+    width: 50%;
+    height: 300px;
+    color: #fff;
+}
+
+
+/* 1,5,9,13 */
+.service:nth-child(1),
+.service:nth-child(5),
+.service:nth-child(9),
+.service:nth-child(13){
+    background-color: #257AA0;
+}
+
+/* 2,6,10 */
+.service:nth-child(2),
+.service:nth-child(6),
+.service:nth-child(10){
+    background-color: #F25F5C;
+}
+
+/* 3,7,11 */
+.service:nth-child(3),
+.service:nth-child(7),
+.service:nth-child(11) {
+    background-color: #FEE066;
+}
+
+/* 4,8,12 */
+.service:nth-child(4),
+.service:nth-child(8),
+.service:nth-child(12) {
+    background-color: #50514E;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .your-business {
+        flex-direction: column;
+    }
+    .your-business .service {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        display: none;
+    }
+    main{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
