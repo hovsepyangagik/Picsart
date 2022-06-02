@@ -1,0 +1,31 @@
+@import url("_variables.scss");
+@import url("_mixins.scss");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    @include flexBetweenCenter;
+    .social-icons{
+        width: 100px;
+        @include stickyCentered;
+        @include flexBetweenCenter;
+        flex-direction: column;
+        a {
+            height: $social_media_icon_height;
+        }
+    }
+    .page-content {
+        padding: 20px 20px 20px 0;
+        p {
+            font-size: $small_paragraph;
+            color: $font_color;
+            text-align: justify;
+        }
+    }
+}
+
+

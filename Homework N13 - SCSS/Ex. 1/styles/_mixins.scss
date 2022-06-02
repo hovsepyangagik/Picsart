@@ -1,0 +1,11 @@
+@mixin flexBetweenCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin stickyCentered {
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,75 @@
+@import url("_variables.scss");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+  height: 125px;
+  padding: 0 20px;
+  background-color: #F1F1F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .company_logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .company_logo a {
+  text-decoration: none;
+}
+
+header .company_logo a span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+}
+
+header nav ul {
+  list-style-type: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  margin-right: 10px;
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+
+header nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+header nav ul li:hover {
+  background-color: #6991FF;
+}
+
+header nav ul li:hover a {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

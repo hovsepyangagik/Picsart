@@ -1,0 +1,42 @@
+@import url("_base.scss");
+@import url("_variables.scss");
+@import url("_mixins.scss");
+
+header {
+    height: $header_height;
+    padding: 0 20px;
+    background-color: $header_background;
+    @include flexBetween;
+    .company_logo {
+        height: 100%;
+        @include flexCenter;
+        a{
+            span{
+                font-size: $header_logo_font-size;
+                font-weight: bold;
+                color: $header_font_color;
+            }
+        }
+    }
+    nav {
+        ul {
+            height: 100%;
+            @include flexCenter;
+            li {
+                margin-right: 10px;
+                padding: $nav-item_padding;
+                border-radius: $nav-item_border-radius;
+                a{
+                    color: $header_font_color;
+                    font-size: $nav-item_font-size;
+                }
+                &:hover {
+                    background-color: $header_navigation-item_hover_background;
+                    a {
+                        color: $header_font_hover_color;
+                    }
+                }
+            }
+        }
+    }
+}
