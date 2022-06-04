@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import "./imports/_reset.scss";
+@import "./imports/_variables.scss";
+@import "./imports/_mixins.scss";
+
+
+.pricing-plans-container {
+    .pricing-plans-heading {
+        margin-bottom: 50px;
+        @include flexCenter;
+        h2 {
+            margin-right: 30px;
+        }
+        .pricing-plan-switcher {
+            position: relative;
+            @include flexCenter;
+           .switcher-input {
+                width: 240px;
+                height: 45px;
+                appearance: none;
+                border-radius: 24px;
+                background-color: $switcher-input-background;
+                cursor: pointer;
+            } 
+            .active-duration {
+                width: 100px;
+                height: 35px;
+                @include position(absolute, $top: 5px, $left: 8px);
+                border-radius: 20px;
+                background-color: $switcher-input-checker-background;  
+                transition: all .5s ease-in-out; 
+                cursor: pointer; 
+            }
+            .monthly {
+                @include planChecker;
+                left: 22px;
+            }
+            .yearly {
+                @include planChecker;
+                right: 30px;
+            }
+        }
+    }
+    .pricing-tables {
+        @include flexCenter;
+        .table {
+            background-color: $table-background;
+            width: 300px;
+            min-width: 260px;
+            padding: 32px;
+            position: relative;
+            background-image: url(../images/bg-shape1.svg);
+            @include backgroundParameters(no-repeat, contain, bottom);
+           
+            .table-content {
+                h3 {
+                    font-size: $h3-fontSize;
+                    margin-bottom: 15px;
+                }
+                .price-container {
+                    @include flexCenter;
+                    justify-content: flex-start;
+                    margin-bottom: 20px;
+                    .price {
+                        font-size: $price-fontSize;
+                        font-weight: bold;
+                        padding-right: 15px;
+                    }
+                }
+                .description {
+                    font-size: $description-fontSize;
+                    line-height: 22px;
+                    margin-bottom: 20px;
+                }
+                .features {
+                    li {
+                        margin: 10px 0;
+                        @include flexCenter;
+                        justify-content: flex-start;
+                        &::before {
+                            content: url("../images/check-icon.svg");
+                            margin-right: 16px;
+                            margin-top: 4px;
+                        }
+                    }
+                }
+                .choose-plan-btn {
+                    @include choosePlanBtn;
+                }
+            }
+        }
+        .best-value {
+            background-color: $best-value-background;
+            color: #fff;
+            padding: 70px 32px;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            .table-content{
+                .best-value-sticker {
+                    @include position(absolute, $top: 0, $left: 0, $right: 0);
+                    width: 100%;
+                    padding: 10px 0;
+                    @include flexCenter;
+                    font-size: $best-value-sticker-fontSize;
+                    background-color: $switcher-input-checker-background;
+                }
+                h3 {
+                    margin-top: 30px;
+                }
+                .choose-plan-btn {
+                    background-color: $choose-plan-btn-background;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .pricing-plans-container {
+        .pricing-plans-heading {
+            flex-direction: column;
+            h2 {
+                margin: 0 0 30px 0;
+                text-align: center;
+            }
+        }
+    }
+    .pricing-tables {
+        flex-direction: column;
+        .table {
+            margin: 20px 0;
+        }
+        .best-value {
+            order: -1;
+        }
+    }
+}

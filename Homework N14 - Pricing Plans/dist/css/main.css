@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  padding: 35px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+.pricing-plans-container .pricing-plans-heading {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-plans-container .pricing-plans-heading h2 {
+  margin-right: 30px;
+}
+
+.pricing-plans-container .pricing-plans-heading .pricing-plan-switcher {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-plans-container .pricing-plans-heading .pricing-plan-switcher .switcher-input {
+  width: 240px;
+  height: 45px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 24px;
+  background-color: #020f47;
+  cursor: pointer;
+}
+
+.pricing-plans-container .pricing-plans-heading .pricing-plan-switcher .active-duration {
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  border-radius: 20px;
+  background-color: deeppink;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.pricing-plans-container .pricing-plans-heading .pricing-plan-switcher .monthly {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  left: 22px;
+}
+
+.pricing-plans-container .pricing-plans-heading .pricing-plan-switcher .yearly {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  right: 30px;
+}
+
+.pricing-plans-container .pricing-tables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-plans-container .pricing-tables .table {
+  background-color: #7c7c7c1f;
+  width: 300px;
+  min-width: 260px;
+  padding: 32px;
+  position: relative;
+  background-image: url(../images/bg-shape1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.pricing-plans-container .pricing-tables .table .table-content h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.pricing-plans-container .pricing-tables .table .table-content .price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.pricing-plans-container .pricing-tables .table .table-content .price-container .price {
+  font-size: 50px;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+.pricing-plans-container .pricing-tables .table .table-content .description {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.pricing-plans-container .pricing-tables .table .table-content .features li {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.pricing-plans-container .pricing-tables .table .table-content .features li::before {
+  content: url("../images/check-icon.svg");
+  margin-right: 16px;
+  margin-top: 4px;
+}
+
+.pricing-plans-container .pricing-tables .table .table-content .choose-plan-btn {
+  background-color: #020f47;
+  padding: 15px 0;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 24px;
+  margin-top: 30px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.pricing-plans-container .pricing-tables .table .table-content .choose-plan-btn:hover {
+  background-color: deeppink;
+}
+
+.pricing-plans-container .pricing-tables .best-value {
+  background-color: #222272;
+  color: #fff;
+  padding: 70px 32px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.pricing-plans-container .pricing-tables .best-value .table-content .best-value-sticker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  background-color: deeppink;
+}
+
+.pricing-plans-container .pricing-tables .best-value .table-content h3 {
+  margin-top: 30px;
+}
+
+.pricing-plans-container .pricing-tables .best-value .table-content .choose-plan-btn {
+  background-color: #06D6A0;
+}
+
+@media screen and (max-width: 768px) {
+  .pricing-plans-container .pricing-plans-heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pricing-plans-container .pricing-plans-heading h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+  .pricing-tables {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pricing-tables .table {
+    margin: 20px 0;
+  }
+  .pricing-tables .best-value {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
