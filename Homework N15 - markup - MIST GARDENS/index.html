@@ -29,13 +29,15 @@
         </div>
         <div class="header__menu-box">
             <ul>
+                <span>Menu</span>
                 <li><a href="#" class="header__menu-item active">Home</a></li>
                 <li><a href="#" class="header__menu-item">Visit</a></li>
                 <li><a href="#" class="header__menu-item">Exhibitions</a></li>
                 <li><a href="#" class="header__menu-item">Programs & Events</a></li>
                 <li><a href="#" class="header__menu-item">Store</a></li>
+                <li><a href="#" class="btn btn--white btn--animated">Membership</a></li>
             </ul>
-            <a href="#" class="btn btn--white btn--animated">Membership</a>
+            
         </div>
         <div class="header__burger-menu">
             <div class="burger-line"></div>
@@ -43,6 +45,22 @@
             <div class="burger-line"></div>
         </div>
     </header>
+
+    <script>
+        const mobileMenuBtn = document.querySelector(".header__burger-menu");
+        const mobileMenu = document.querySelector(".header__menu-box");
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            
+            if(mobileMenu.style.opacity === "0") {
+                mobileMenu.style.opacity = "1";
+                mobileMenuBtn.classList.add("active");
+            }else {
+                mobileMenu.style.opacity = "0";
+                mobileMenuBtn.classList.remove("active");
+            }
+        });
+    </script>
     
 </body>
 </html>

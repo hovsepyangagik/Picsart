@@ -12,12 +12,18 @@
         line-height: 1.64rem;
         cursor: pointer;
         color: $color-menu-item-active;
-        border: .2rem solid $color-menu-item-active;    
+        border: .2rem solid $color-menu-item-active;   
+        @media screen and (max-width: 1200px){
+            color: $color-menu-item-mobile;
+            border: .2rem solid $color-menu-item-mobile;
+        } 
     }
     &:hover {
         color: $color-menu-item-active;
         border: .2rem solid $color-menu-item-active;
+        
     }
+    
 }
 
 
@@ -26,6 +32,7 @@
     flex-direction: column;
     display: none;
     cursor: pointer;
+    z-index: 9999;
     .burger-line{
         width: 1.8rem;
         height: .2rem;
@@ -34,16 +41,18 @@
         border-radius: 5px;
         transition: all .5s ease-in-out;
     }
-    &:hover .burger-line {
+    &.active .burger-line {
         background-color: $color-menu-item-active;
         &:nth-child(1) {
             transform: rotate(45deg) translate(5px, 5px);
+            background-color: #fff;
         }
         &:nth-child(2) {
             opacity: 0;
         }
         &:nth-child(3) {
             transform: rotate(-45deg) translate(3px, -4px);
+            background-color: #fff;
         }
     }
     @media screen and (max-width: 1200px){
