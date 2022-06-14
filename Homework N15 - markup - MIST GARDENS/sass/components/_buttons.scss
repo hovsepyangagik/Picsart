@@ -2,7 +2,7 @@
     &,
     &:link,
     &:visited {
-        @include flexStartCenter;
+        display: inline-block;
         text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 3rem;
@@ -11,21 +11,18 @@
         letter-spacing: .25rem;
         line-height: 1.64rem;
         cursor: pointer;
+        white-space: nowrap;
+    }
+    &--white {
         color: $color-menu-item-active;
         border: .2rem solid $color-menu-item-active;   
-        @media screen and (max-width: 1200px){
-            color: $color-menu-item-mobile;
-            border: .2rem solid $color-menu-item-mobile;
-        } 
     }
-    &:hover {
-        color: $color-menu-item-active;
-        border: .2rem solid $color-menu-item-active;
-        
-    }
-    
+    &--green {
+        background-color: $color-menu-item-active;
+        color: $color-menu-item-mobile;
+        border: .2rem solid $color-menu-item-active;  
+    }  
 }
-
 
 .header__burger-menu {
     @include flexCenter;

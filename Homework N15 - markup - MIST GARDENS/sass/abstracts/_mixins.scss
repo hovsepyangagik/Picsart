@@ -6,6 +6,9 @@
     @media screen and (max-width: 744px){
         padding: 2.2rem 1.6rem;
     }
+    @media screen and (max-width: 444px){
+        padding: 2.2rem 1.6rem;
+    }
 }
 
 @mixin flexStartCenter {
@@ -17,6 +20,11 @@
 @mixin flexBetweenStart {
     display: flex;
     justify-content: space-between;
+}
+@mixin flexBetweenCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @mixin flexEvenlyCenter {

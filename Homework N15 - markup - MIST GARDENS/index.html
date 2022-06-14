@@ -28,8 +28,8 @@
             </div>    
         </div>
         <div class="header__menu-box">
+            <span>Menu</span>
             <ul>
-                <span>Menu</span>
                 <li><a href="#" class="header__menu-item active">Home</a></li>
                 <li><a href="#" class="header__menu-item">Visit</a></li>
                 <li><a href="#" class="header__menu-item">Exhibitions</a></li>
@@ -37,7 +37,6 @@
                 <li><a href="#" class="header__menu-item">Store</a></li>
                 <li><a href="#" class="btn btn--white btn--animated">Membership</a></li>
             </ul>
-            
         </div>
         <div class="header__burger-menu">
             <div class="burger-line"></div>
@@ -46,19 +45,85 @@
         </div>
     </header>
 
+    <section class="adventure">
+        <div class="adventure__left-part">
+            <h2 class="adventure__heading">A Beautiful Adventure Awaits</h2>
+            <p  class="adventure__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nunc</p>
+            <div class="adventure__buttons">
+                <a href="#" class="btn btn--green btn--animated">Buy Tickets</a>
+                <a href="#" class="btn btn--white btn--animated">Learn More</a>
+            </div>
+        </div>
+        <div class="adventure__right-part">
+            <div class="adventure__image-box">
+                <img src="./img/adventure.png" 
+                     alt="Adventure"
+                     class="adventure__img">
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery__container">
+            <div class="gallery__item">
+                <img src="./img/gallery-img-1.png" 
+                     alt="Gallery image"
+                     width="534px">
+            </div>
+            <div class="gallery__item">
+                <h2 class="gallery__heading">Discover yourself with nature</h2>
+                <p  class="gallery__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nuncLorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nunc</p>
+                <a href="#" class="btn btn--white btn--animated">Learn More</a>
+            </div>
+            <div class="gallery__item">
+                <img src="./img/gallery-img-2.png" 
+                     alt="Gallery image"
+                     width="100%">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
+
         const mobileMenuBtn = document.querySelector(".header__burger-menu");
-        const mobileMenu = document.querySelector(".header__menu-box");
+        const mobileMenu    = document.querySelector(".header__menu-box");
+
+        if(window.innerWidth <= 1200) {
+            mobileMenu.style.opacity = "0";
+            mobileMenu.style.visibility = "hidden";
+        }else {
+            mobileMenu.style.opacity = "1";
+        }
         
         mobileMenuBtn.addEventListener('click', () => {
             
             if(mobileMenu.style.opacity === "0") {
+                mobileMenu.style.visibility = "visible";
                 mobileMenu.style.opacity = "1";
                 mobileMenuBtn.classList.add("active");
+                document.querySelector("body").style.overflowY = "hidden";
             }else {
                 mobileMenu.style.opacity = "0";
                 mobileMenuBtn.classList.remove("active");
+                mobileMenu.style.visibility = "hidden";
+                document.querySelector("body").style.overflowY = "scroll";
             }
+
         });
     </script>
     
