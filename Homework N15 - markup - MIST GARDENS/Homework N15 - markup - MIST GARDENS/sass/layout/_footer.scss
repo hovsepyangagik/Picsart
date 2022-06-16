@@ -1,0 +1,82 @@
+.footer {
+    background-color: $color-footer-background-light;
+    &__container {
+        @include container;
+        padding: 4.8rem 10rem;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 576px){
+            flex-direction: column;
+        }
+    }
+    &__heading-primary {  
+        .heading-primary--main {
+            color: $section-heading-light;
+        }
+        .heading-primary--sub {
+            color: $section-heading-light;
+        }
+    }
+    &__description {
+        font-style: 1.6rem;
+        line-height: 2.4rem;
+        color: $section-heading-light;
+        max-width: 27rem;
+        margin-top: 20px;
+        @media screen and (max-width: 576px) {
+            text-align: center;
+        }
+    }
+    &__column-name {
+        font-size: 1.6rem;
+        line-height: 1.76rem;
+        font-weight: 400;
+        color: $section-heading-light;
+        margin-bottom: 2rem;
+    }
+    &__icon-box {
+        a {
+            margin-right: 2.5rem;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        padding: 0 2rem 0 0;
+        @media screen and (max-width: 576px){
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        ul {
+            li {
+                list-style: none;
+                margin-bottom: 1rem;
+                @media screen and (max-width: 576px) {
+                    text-align: center;
+                }
+                a {
+                    color: $section-heading-light;
+                    font-size: 1.4rem;
+                    line-height: 1.64rem;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__bottom {
+        padding: 3rem 0;
+        background-color: $color-footer-background-dark;
+        &--paragraph {
+            text-align: center;
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+            color: $section-heading-light;
+        }
+    }
+}

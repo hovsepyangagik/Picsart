@@ -1,5 +1,6 @@
 .header {
     @include container;
+    padding: 2.2rem 10rem;
     @include flexBetweenStart;
     &__logo-box {
         display: flex;
